@@ -68,7 +68,7 @@ func initializeCountryInfoService() *service.CountryInfoService {
 
 1) **Clonare il repository**:
 ```sh
-git clone <url_del_repository>
+git clone https://github.com/Andrea-Cavallo/soap-client-in-go.git
 ```
 
 2) **Configurare le dipendenze**:
