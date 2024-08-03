@@ -1,0 +1,43 @@
+# Diretori e file specifici di Go
+/bin/
+/pkg/
+/vendor/
+
+# File binari
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Dati di test
+*.out
+
+# Directory di test
+*_test.go
+
+# Editor e Sistema Operativo
+.DS_Store
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+*.pid
+*.seed
+*.state
+.vscode/
+*.code-workspace
+
+# Node modules (se usi Node.js per qualcos'altro nel progetto)
+node_modules/
+
+# Ambiente
+.env
+.env.*
+
+# Specifico per Go
+coverage.out
+

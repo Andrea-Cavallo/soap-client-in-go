@@ -1,0 +1,25 @@
+package constants
+
+const (
+	ListOfContinentsByNameURL               = "http://www.oorsprong.org/websamples.countryinfo/ListOfContinentsByName"
+	ListOfContinentsByCodeURL               = "http://www.oorsprong.org/websamples.countryinfo/ListOfContinentsByCode"
+	listOfCurrenciesByNameURL               = "http://www.oorsprong.org/websamples.countryinfo/ListOfCurrenciesByName"
+	listOfCurrenciesByCodeURL               = "http://www.oorsprong.org/websamples.countryinfo/ListOfCurrenciesByCode"
+	currencyNameURL                         = "http://www.oorsprong.org/websamples.countryinfo/CurrencyName"
+	listOfCountryNamesByCodeURL             = "http://www.oorsprong.org/websamples.countryinfo/ListOfCountryNamesByCode"
+	listOfCountryNamesByNameURL             = "http://www.oorsprong.org/websamples.countryinfo/ListOfCountryNamesByName"
+	listOfCountryNamesGroupedByContinentURL = "http://www.oorsprong.org/websamples.countryinfo/ListOfCountryNamesGroupedByContinent"
+	countryNameURL                          = "http://www.oorsprong.org/websamples.countryinfo/CountryName"
+	countryISOCodeURL                       = "http://www.oorsprong.org/websamples.countryinfo/CountryISOCode"
+	capitalCityURL                          = "http://www.oorsprong.org/websamples.countryinfo/CapitalCity"
+	countryCurrencyURL                      = "http://www.oorsprong.org/websamples.countryinfo/CountryCurrency"
+	countryFlagURL                          = "http://www.oorsprong.org/websamples.countryinfo/CountryFlag"
+	countryIntPhoneCodeURL                  = "http://www.oorsprong.org/websamples.countryinfo/CountryIntPhoneCode"
+	fullCountryInfoURL                      = "http://www.oorsprong.org/websamples.countryinfo/FullCountryInfo"
+	fullCountryInfoAllCountriesURL          = "http://www.oorsprong.org/websamples.countryinfo/FullCountryInfoAllCountries"
+	countriesUsingCurrencyURL               = "http://www.oorsprong.org/websamples.countryinfo/CountriesUsingCurrency"
+	listOfLanguagesByNameURL                = "http://www.oorsprong.org/websamples.countryinfo/ListOfLanguagesByName"
+	listOfLanguagesByCodeURL                = "http://www.oorsprong.org/websamples.countryinfo/ListOfLanguagesByCode"
+	languageNameURL                         = "http://www.oorsprong.org/websamples.countryinfo/LanguageName"
+	languageISOCodeURL                      = "http://www.oorsprong.org/websamples.countryinfo/LanguageISOCode"
+)
