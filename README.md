@@ -1,5 +1,7 @@
 # Soap Client implementation with GO.
 
+<img src="webserviceexample.jpg">
+
 ## Introduzione:
 
 Questo progetto implementa un client `SOAP: Simple Object Access Protocol`
@@ -7,7 +9,11 @@ Protocollo standard progettato per permettere la comunicazione tra applicazioni 
 Essendo un protocollo, impone regole integrate che aumentano la complessità e l'overhead, il che può portare a tempi di caricamento più lunghi.
 Tuttavia, questi standard offrono sicurezza e ACID che può essere preferibile per scenari aziendali
 
-In questo esempio il client è progettato per interagire con un servizio SOAP che fornisce informazioni sui paesi preso da: http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso
+In questo esempio il client è progettato per interagire con un servizio SOAP che fornisce informazioni sui paesi preso da: http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL)
+Clicca su
+- For a formal definition, please review the `Service Description.`
+Per copiare il file in formato `.wsdl`
+
 
 ## Come leggere un file .wsdl e generare una service.go:
 
