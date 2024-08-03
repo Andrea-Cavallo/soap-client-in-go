@@ -17,8 +17,10 @@ func init() {
 }
 func main() {
 	countryInfoService := initializeCountryInfoService()
-	//countryInfoService.ListOfContinentByNameWithoutContext()
+	log.Println("Prima chiamata senza context")
+	countryInfoService.ListOfContinentByNameWithoutContext()
 	// Creare un contesto con timeout di 5 secondi
+	log.Println("Seconda chiamata con context")
 	ctx, cancel := context.WithTimeout(context.Background(), 7*time.Second)
 	defer cancel()
 	countryInfoService.ListOfContinentsByName(ctx)
