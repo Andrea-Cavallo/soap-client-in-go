@@ -29,6 +29,8 @@ func NewCountryInfoService(client *client.CountryInfoClient) *CountryInfoService
 // La lista dei continenti viene stampata sulla console. Non restituisce alcun valore.
 func (cis *CountryInfoService) ListOfContinentsByName(ctx context.Context) {
 	request := &generated.ListOfContinentsByName{}
+	log.Println("Inizio Seconda chiamata con context")
+
 	time.Sleep(6 * time.Second)
 	select {
 	case <-ctx.Done():
@@ -39,7 +41,9 @@ func (cis *CountryInfoService) ListOfContinentsByName(ctx context.Context) {
 		for _, continent := range response.ListOfContinentsByNameResult.TContinent {
 			log.Printf("Codice Continente: %s, Nome Continente: %s\n", continent.SCode, continent.SName)
 		}
+
 	}
+	log.Println("Fine Seconda chiamata con context")
 
 }
 
@@ -50,8 +54,11 @@ func (cis *CountryInfoService) ListOfContinentsByName(ctx context.Context) {
 func (cis *CountryInfoService) ListOfContinentByNameWithoutContext() {
 	request := &generated.ListOfContinentsByName{}
 	response, _ := cis.client.ListOfContinentsByNameWithoutContext(request)
+	log.Println("Inizio Prima chiamata senza context")
+
 	for _, continent := range response.ListOfContinentsByNameResult.TContinent {
 		log.Printf("Codice Continente: %s, Nome Continente: %s\n", continent.SCode, continent.SName)
 	}
+	log.Println("Fine Prima chiamata senza context")
 
 }

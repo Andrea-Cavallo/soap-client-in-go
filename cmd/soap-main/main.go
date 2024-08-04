@@ -16,10 +16,9 @@ import (
 // The program also logs debug information before and after each API call.
 func main() {
 	countryInfoService := initializeCountryInfoService()
-	log.Println("Prima chiamata senza context")
 	countryInfoService.ListOfContinentByNameWithoutContext()
 	// Creare un contesto con timeout di 5 secondi
-	log.Println("Seconda chiamata con context")
+	log.Println("•••••••••••••••••••••••••••••••••••••••••••••••••")
 	ctx, cancel := context.WithTimeout(context.Background(), 7*time.Second)
 	defer cancel()
 	countryInfoService.ListOfContinentsByName(ctx)
@@ -31,9 +30,9 @@ func main() {
 // It sets the log output to os.Stdout, so that log messages are written to the standard output.
 // It sets the log prefix to "••••••• ✈️✈️ ", which is added at the beginning of each log message.
 func init() {
-	log.SetFlags(0)
+	log.SetFlags(4)
 	log.SetOutput(os.Stdout)
-	log.SetPrefix("••••••• ✈️✈️ ")
+	log.SetPrefix("✈️ ")
 }
 
 // initializeCountryInfoService creates a new instance of the CountryInfoService by initializing all its dependencies.
